@@ -1,2 +1,27 @@
-spring.application.name: employee-api
-server.port: 8111
+spring:
+  application.name: employee-api
+  server.port: 8111
+
+employee:
+  api:
+    base-url: http://localhost:8112
+
+resilience4j:
+  retry:
+    instances:
+      employeeApiRetry:
+        maxAttempts: 3
+        waitDuration: 2s
+        enableExponentialBackoff: true
+        exponentialBackoffMultiplier: 2
+        maxWaitDuration: 10s
+
+  circuitbreaker:
+    instances:
+      employeeApiCircuitBreaker:
+        registerHealthIndicator: true
+        slidingWindowSize: 10
+        minimumNumberOfCalls: 5
+        failureRateThreshold: 50
+        waitDurationInOpenState: 30s
+        permittedNumberOfCallsInHalfOpenState: 3

@@ -7,7 +7,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 class ApiApplicationTest {
 
     @Test
-    void someTest() {
-        // do the thing here
+    void contextLoads() {
+        // This test will pass if the application context loads without issues
     }
 }
