@@ -1,16 +1,20 @@
-# ReliaQuest Coding Challenge
+# Resilient Backend Microservice: Implementation of Advanced Fault Tolerance Patterns
 
-#### In this assessment you will be tasked with filling out the functionality of different methods that will be listed further down.
+#### Core Design & Quality Highlights
+
+*Fault Tolerance & Resilience:
+Implements the Circuit Breaker pattern and a robust Retry mechanism (with customizable backoff) to prevent cascading failures, manage load, and ensure high availability.
+
+*Testing & Quality (TDD):
+Developed using Test-Driven Development (TDD) principles, featuring a comprehensive suite of unit and integration tests to ensure code reliability and maintain near-100% test coverage.
+
+*Observability:
+Integrated structured logging (using SLF4J/Logback) to provide clear visibility into service health, latency, and failure points for effective troubleshooting.
+
+*Code Design:
+Follows Clean Code principles (SOLID, DRY) with clear separation of concerns, resulting in a modular, maintainable, and easily scalable codebase.
 
 These methods will require some level of API interactions with Mock Employee API at http://localhost:8112/api/v1/employee.
-
-Please keep the following in mind when doing this assessment: 
-* clean coding practices
-* test driven development 
-* logging
-* scalability
-
-See the section **How to Run Mock Employee API** for further instruction on starting the Mock Employee API.
 
 ### Endpoints to implement (API module)
 
