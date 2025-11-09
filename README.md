@@ -2,16 +2,16 @@
 
 #### Core Design & Quality Highlights
 
-*Fault Tolerance & Resilience:
+**1] Fault Tolerance & Resilience:**
 Implements the Circuit Breaker pattern and a robust Retry mechanism (with customizable backoff) to prevent cascading failures, manage load, and ensure high availability.
 
-*Testing & Quality (TDD):
+**2] Testing & Quality (TDD):**
 Developed using Test-Driven Development (TDD) principles, featuring a comprehensive suite of unit and integration tests to ensure code reliability and maintain near-100% test coverage.
 
-*Observability:
+**3] Observability:**
 Integrated structured logging (using SLF4J/Logback) to provide clear visibility into service health, latency, and failure points for effective troubleshooting.
 
-*Code Design:
+**4] Code Design:**
 Follows Clean Code principles (SOLID, DRY) with clear separation of concerns, resulting in a modular, maintainable, and easily scalable codebase.
 
 These methods will require some level of API interactions with Mock Employee API at http://localhost:8112/api/v1/employee.
